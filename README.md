@@ -15,8 +15,12 @@ to reflect past, present and future events. The planner refreshes every hour to 
 ### Issues Remaining
 * While planner generally resembles mockup, small details such as size of save and delete icons, are slightly off
 
-## Screenshots of deployed page
+## Link to Daily Planner
 
+[Click here to schedule your day!](https://jk1956.github.io/Daily-Planner/)
+
+## Screenshots of deployed page
+S
 The workday planner will appear as the following once deployed in a traditonal desktop browser after business hours:
 
 ![Home page](develop/homepage.JPG)
