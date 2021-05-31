@@ -21,3 +21,6 @@ THEN the saved events persist
 ## Sources
 
 [moment.js](https://momentjs.com/)
+[jquery]
+[How to color code timeblocks](https://stackoverflow.com/questions/59995703/trying-to-change-background-color-based-off-if-the-hour-is-in-the-past-current)
+[Set Interval](https://www.w3schools.com/jsref/met_win_setinterval.asp)
