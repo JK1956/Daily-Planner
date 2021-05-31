@@ -23,7 +23,7 @@ to reflect past, present and future events. The planner refreshes every hour to 
 S
 The workday planner will appear as the following once deployed in a traditonal desktop browser after business hours:
 
-![Home page](develop/homepage.JPG)
+![Home page](assets/images/homepage.JPG)
 
 ## Sources
 
