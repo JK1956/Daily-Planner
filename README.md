@@ -28,7 +28,7 @@ The workday planner will appear as the following once deployed in a traditonal d
 ## Sources
 
 [moment.js](https://momentjs.com/)
-[jquery]
+[jquery](https://jquery.com/)
 [Reference for how to format appended columns](https://getbootstrap.com/docs/5.0/layout/columns/)
 [How to color code timeblocks](https://stackoverflow.com/questions/59995703/trying-to-change-background-color-based-off-if-the-hour-is-in-the-past-current)
 [Set Interval](https://www.w3schools.com/jsref/met_win_setinterval.asp)
