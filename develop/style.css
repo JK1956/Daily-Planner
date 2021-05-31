@@ -9,7 +9,6 @@ body {
     border: none;
     resize: none;
     color: #000000;
-    border-left: 1px solid black;
     padding: 10px;
   }
   
@@ -39,7 +38,7 @@ body {
   .hour {
     background-color: #ffffff;
     color: #000000;
-    border-top: 1px dashed #000000;
+    border-top: 1px solid #000000;
   }
   
   .past {
@@ -58,7 +57,7 @@ body {
   }
   
   .saveBtn {
-    border-left: 1px solid black;
+    border-left: 3px solid #196b7e;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;

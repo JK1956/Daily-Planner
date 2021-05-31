@@ -40,14 +40,14 @@ var plan10 = JSON.parse(localStorage.getItem('hour10')) || "";
 
 var plans = [plan1, plan2, plan3, plan4, plan5, plan6, plan7, plan8, plan9, plan10];
 
-// Save plans to local storage
+// Create classes for each plan in localstorage
 
 $.each(hourBlock, function (index, value) {
     plans 
-  $(".container").append("<div class='row'><div class='col-2 hour text-right' id='hour" +
-        (index + 9) + "'><span>" + value.format("h A") + "</span></div><div class='col-8 event-group' id='timeblock" +
-        (index + 9) + "'><textarea class='events col-12' id='eventblock" + (index + 9) + "'>" + plans[index] + "</textarea></div>" +
-        "<div class='col-2 save-delete' id='save-delete" + (index + 9) + "'><i class='fas fa-save' title='Save Event'></i> <i class='fas fa-trash' title='Remove Event'></i></div></div></div>");
+  $(".container").append("<div class='row'><div class='col-1 hour text-right' id='hour" +
+        (index + 9) + "'><span>" + value.format("h A") + "</span></div><div class='col-10 event-group' id='timeblock" +
+        (index + 9) + "'><textarea class='events col-10' id='eventblock" + (index + 9) + "'>" + plans[index] + "</textarea></div>" +
+        "<div class='col-1 save-delete saveBtn' id='save-delete" + (index + 9) + "'><i class='fas fa-save hover' title='Save Event'></i> <i class='fas fa-trash hover' title='Remove Event'></i></div></div></div>");
 });
 
 
@@ -157,6 +157,84 @@ $.each(hourBlock, function (index, value) {
         };
     }
 
+// Save plans to localstorage
+
+$("#save-delete9").on("click", "i.fa-save", function () {
+    var event9 = $("#eventblock9").val().trim();
+    localStorage.setItem('hour1', JSON.stringify(event9));
+})
+$("#save-delete10").on("click", "i.fa-save", function () {
+    var event10 = $("#eventblock10").val().trim();
+    localStorage.setItem('hour2', JSON.stringify(event10));
+})
+$("#save-delete11").on("click", "i.fa-save", function () {
+    var event11 = $("#eventblock11").val().trim();
+    localStorage.setItem('hour3', JSON.stringify(event11));
+})
+$("#save-delete12").on("click", "i.fa-save", function () {
+    var event12 = $("#eventblock12").val().trim();
+    localStorage.setItem('hour4', JSON.stringify(event12));
+})
+$("#save-delete13").on("click", "i.fa-save", function () {
+    var event13 = $("#eventblock13").val().trim();
+    localStorage.setItem('hour5', JSON.stringify(event13));
+})
+$("#save-delete14").on("click", "i.fa-save", function () {
+    var event14 = $("#eventblock14").val().trim();
+    localStorage.setItem('hour6', JSON.stringify(event14));
+})
+$("#save-delete15").on("click", "i.fa-save", function () {
+    var event15 = $("#eventblock15").val().trim();
+    localStorage.setItem('hour7', JSON.stringify(event15));
+})
+$("#save-delete16").on("click", "i.fa-save", function () {
+    var event16 = $("#eventblock16").val().trim();
+    localStorage.setItem('hour8', JSON.stringify(event16));
+})
+$("#save-delete17").on("click", "i.fa-save", function () {
+    var event17 = $("#eventblock17").val().trim();
+    localStorage.setItem('hour9', JSON.stringify(event17));
+})
+
+// Delete plans from local storage
+
+$("#save-delete9").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour1");
+    $("#eventblock9").val("");
+})
+$("#save-delete10").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour2");
+    $("#eventblock10").val("");
+})
+$("#save-delete11").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour3");
+    $("#eventblock11").val("");
+})
+$("#save-delete12").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour4");
+    $("#eventblock12").val("");
+})
+$("#save-delete13").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour5");
+    $("#eventblock13").val("");
+})
+$("#save-delete14").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour6");
+    $("#eventblock14").val("");
+})
+$("#save-delete15").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour7");
+    $("#eventblock15").val("");
+})
+$("#save-delete16").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour8");
+    $("#eventblock16").val("");
+})
+$("#save-delete17").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour9");
+    $("#eventblock17").val("");
+})
+
 // Run colorTime function
 
 setInterval(function () {
@@ -166,4 +244,4 @@ setInterval(function () {
     // ^ Sets interval to refresh code every hour: 1000ms * 60 seconds * 60 minutes = 1 hour) 
 })
 
-console.log(currentTime);
+colorTime();
