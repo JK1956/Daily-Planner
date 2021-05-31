@@ -17,7 +17,7 @@ to reflect past, present and future events. The planner refreshes every hour to 
 
 ## Link to Daily Planner
 
-[Click here to schedule your day!](https://jk1956.github.io/Daily-Planner/)
+[Click here to schedule your day!](http://jk1956.github.io/Daily-Planner/)
 
 ## Screenshots of deployed page
 S
